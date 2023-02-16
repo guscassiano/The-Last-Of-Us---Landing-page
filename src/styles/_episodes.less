@@ -1,0 +1,74 @@
+@import 'colors';
+
+.episodes {
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            margin-left: 30px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    &__links {
+
+        &__item {
+            margin: 20px 100px;
+            padding: 50px;
+            text-align: center;
+            border: 2px solid @corBordaItens;
+
+            h3 {
+                cursor: pointer;
+            }
+
+            .content {
+                display: none;
+            }
+            
+            &--is-open {
+
+                .episodes__links__item {
+                    margin: 20px 100px;
+                    padding: 50px;
+                    border: 2px solid @corBordaItens;
+                    transition: all 2s ease;
+                    h3 {
+                        cursor: pointer;
+                    }
+                }
+
+                .content {
+                    display: block;
+                    transition: all 2s ease;
+                    p {
+                        margin: 20px;
+                    }
+                
+                    img {
+                        max-width: 400px;
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+        
+    }
+    
+    &__images {
+
+        img{
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+    }
+
+}
