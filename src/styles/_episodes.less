@@ -56,10 +56,12 @@
                     img {
                         max-width: 400px;
                         width: 100%;
+                        -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 100%);
+                        mask-image: linear-gradient(to right, transparent 5%, black 100%);
+                        mask-mode: alpha;
                     }
                 }
             }
-
         }
         
     }
@@ -71,5 +73,4 @@
             margin-bottom: 10px;
         }
     }
-
 }

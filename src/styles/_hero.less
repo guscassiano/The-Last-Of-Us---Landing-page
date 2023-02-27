@@ -27,13 +27,14 @@
         img {
             width: 100%;
             max-height: 65vh;
-            filter: brightness(90%);
             border-radius: 20px;
+            -webkit-mask-image: linear-gradient(to right, transparent 5%, black 100%);
+            mask-image: linear-gradient(to right, transparent 5%, black 100%);
+            mask-mode: alpha;
 
             @media (max-width: 1024px) {
                 display: none;
             }
-
         }
     }
 }
